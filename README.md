@@ -1,3 +1,5 @@
-# Setup
+## Setup Inicial Optimization Tecnology class
 
-## Setup Inicial Optimization Tecnology
+### Used tools
+- Npm
+  - Bootstrap 4(jquery,popper)
