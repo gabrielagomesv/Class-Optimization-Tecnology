@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #ffe002;
+  font-family: 'Arial', Verdana, Tahoma;
+  font-size: 16px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  border: 1px solid #16c6ef;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+figure {
+  position: relative;
+}
+
+figure img {
+  width: 100%;
+  max-width: 960px;
+  height: 400px;
+}
+
+figure figcaption {
+  background: rgba(11, 127, 197, 0.33);
+  color: #fff;
+  font-size: 48px;
+  display: inline;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  line-height: 1.20em;
+  border: 2px solid #16c6ef;
+  border-radius: 5px;
+}
+
+header nav {
+  margin-top: 3px;
+}
+
+header nav ul li {
+  width: 192px;
+  display: block;
+  float: left;
+  background: #16c6ef;
+  text-align: center;
+  line-height: 2.5em;
+  border-bottom: 4px solid #066aa5;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+header nav ul li a:hover {
+  border-color: #666;
+  background-color: #fed721;
+  color: red;
+}
+
+main {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+main article {
+  background: #fcd51e;
+  width: 699px;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+main article h1 {
+  text-transform: uppercase;
+  font-family: 'Arial';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+main article h2 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+main article h2 span {
+  color: #fed721;
+  background: #16c6ef;
+  font-style: italic;
+}
+
+main article h3 {
+  text-decoration: underline;
+}
+
+main article p {
+  margin-bottom: 20px;
+}
+
+main article section {
+  position: relative;
+  margin: 15px;
+  float: left;
+}
+
+main article section div p {
+  text-align: center;
+  top: 90px;
+  left: 0;
+  padding: 5px;
+  position: relative;
+  width: 70px;
+  margin-left: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+main article section .persona {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #16c6ef;
+  display: inline-block;
+}
+
+main article section .homer, main article section .mag, main article section .bart, main article section .lisa, main article section .marj {
+  background-size: cover;
+  margin: 10px;
+}
+
+main article section .homer {
+  background-image: url(../img/homer.jpg);
+}
+
+main article section .mag {
+  background-image: url(../img/Mag.jpg);
+}
+
+main article section .bart {
+  background-image: url(../img/Bart.jpg);
+}
+
+main article section .lisa {
+  background-image: url(../img/Lisa.jpg);
+}
+
+main article section .marj {
+  background-image: url(../img/Marj.jpg);
+}
+
+main aside {
+  background: green;
+  float: right;
+  width: 199px;
+  padding: 10px;
+  color: #fff;
+}
+
+main aside section h3 {
+  padding: 10px;
+}
+
+main aside ul li {
+  list-style: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+main aside ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  line-height: 20px;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+main aside ul li a:hover {
+  color: #666;
+  background-color: #16c6ef;
+  border-radius: 10px;
+}
+
+footer {
+  clear: both;
+  background: blue;
+}
+
+footer p {
+  margin-left: 30px;
+  padding: 10px;
+  color: #fff;
+}
