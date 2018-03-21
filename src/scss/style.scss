@@ -1,0 +1,156 @@
+/*
+Regras:
+- Utilizar regras aninhadas em Sass;
+- Utilizar variáveis;
+- Utilizar pseudo-elementos; &
+- Importar reset via Sass;  @import
+- Estender  uma classe dentro de outra;  @extend
+
+Boa Sorte!
+*/
+
+$caixote-width: 1200px;
+$amarelo: #e7b600;
+$azul-violeta: #4c74e1;
+$amarelo-footer: #f8cf00;
+$branco: #ffffff;
+
+body{
+  font-family: 'Arial';
+}
+
+.caixote {
+  width: $caixote-width;
+  background-color: $amarelo;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../img/nuvem-topo.png");
+
+  .logo {
+    margin-left: 460px;
+    padding-top: 14px;
+  }
+
+  .menuPersonagens {
+    background-color: $azul-violeta;
+    padding: 20px 0 20px 40px;
+
+    .persona {
+      display: inline-block;
+    }
+
+    .quadro {
+      border: 5px solid $branco;
+      width: 210px;
+      height: 250px;
+
+    }
+
+    .fundoA{
+      background-color: $amarelo;
+    }
+
+    .fundoB {
+      background-color: #65b5e9;
+    }
+
+    .homer {
+      background-image: url("../img/Homer_Simpson.png");
+    }
+
+    .lisa {
+      background-image: url("../img/Lisa_Simpson.png");
+    }
+
+    .bart{
+      background-image: url("../img/Bart_Simpson.png");
+    }
+
+    .mag{
+      background-image: url("../img/Maggie_Simpson.png");
+    }
+
+    .marje {
+      background-image: url("../img/Marge_Simpson.png");
+    }
+    button {
+      border: none;
+      border: 2px solid $amarelo;
+      border-radius: 5px;
+      background-color: #985A00;
+      margin: 5px 0 0 55px;
+      padding: 11px 20px;
+      color: $branco;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+main {
+  width: 100%;
+  margin-top: 12px;
+  background-color: $branco;
+
+  article {
+    padding: 20px;
+
+    img {
+      margin-top: 40px;
+      border: 2px solid $azul-violeta;
+      border-radius: 20px;
+    }
+
+    .materia {
+      width: 72%;
+      float: right;
+    }
+
+    p{
+      padding-left: 20px;
+      font-size: 13px;
+    }
+  }
+
+  h1 {
+    color: $azul-violeta;
+  }
+  p {
+    color: #616161;
+  }
+  span {
+    background-color: $amarelo;
+    padding: 0.5px;
+  }
+}
+
+
+footer{
+  padding: 20px 0 3px 20px;
+  clear: both;
+  background-color: $amarelo-footer;
+
+  .dadosAluno{
+    p {
+      color: #fff;
+      font-weight: 600;
+
+      &:first-of-type{
+        font-size: 25px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .familia{
+    img{
+      width: 200px;
+      float: right;
+      margin-top: -147px;
+      padding-right: 500px;
+    }
+  }
+}
