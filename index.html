@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="src/js/script_safadao.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Wesley Safadão</h2>
+            <div class="alert alert-info" role="alert">
+              Est dolor sint ipsum consequat amet Lorem aliqua adipisicing veniam aliqua et.
+            <br>
+            Ipsum cupidatat irure do laborum officia ex fugiat nulla.
+            <hr>
+            <h4>safadeza = somatorio(mes)+(ano/100)*(50-dia)</h4>
+            <br>
+            <h4>sanjo = 100 - safadeza</h4>
+            <hr>
+            Culpa labore elit aute laboris adipisicing eu ullamco est in nisi aute ipsum voluptate. Ipsum mollit cupidatat velit ex laboris ipsum laborum consectetur aliquip veniam aliquip velit ad. Elit sunt duis amet commodo minim sunt quis officia mollit elit. Non dolore voluptate pariatur sunt cillum est minim aute. Eiusmod nisi cillum sit ea sunt ad Lorem enim mollit officia aute eu labore pariatur. Amet aliqua dolore irure do est sint ut ea cupidatat do commodo. In laboris non duis ullamco excepteur culpa occaecat eiusmod.
+          </div>
+          </div>
+          <div class="col-md-6 text-right ajuste">
+            <img src="src/img/wesley-safadao.png" alt="Wesley Safadão">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <form class="form-horizontal" name="form">
+              <div class="form-group">
+                <label for="dia" class="col-sm-2 control-label">Dia</label>
+                <div class="col-sm-3">
+                  <input type="number" class="form-control" id="dia" min="1" max="31" onkeyup="limit(this);">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mes" class="col-sm-2 control-label">Mês</label>
+                <div class="col-sm-3">
+                  <input type="number" class="form-control" id="mes" min="1" max="12" onkeyup="limit(this);">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="ano" class="col-sm-2 control-label">Ano</label>
+                <div class="col-sm-3">
+                  <input type="number" class="form-control" id="ano" min="1" max="99" onkeyup="limit(this);">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="button" class="btn btn-primary" onclick="valida();">Calcular Safadeza</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7">
+            <div id="resultado" class="alert alert-danger text-center" role="alert"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
