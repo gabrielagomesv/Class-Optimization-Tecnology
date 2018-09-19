@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <title>Exercicio02</title>
+</head>
+<body>
+  <h1>Exercício 02</h1>
+  <label for="texto">Texto:</label>
+
+  <input type="number" name="texto" id="texto">
+  <br>
+  <input type="submit" value="consultar" id="consultar">
+
+  <script>
+    var number = $("#texto").val();
+
+    $("#consultar").click(function(){
+      $.get("http://numbersapi.com/" + number, function(info) {
+        $("<div>").html(info).appendTo("body");
+      });
+    });
+
+  </script>
+</body>
+</html>
